@@ -31,7 +31,7 @@ class Router {
 //        var_dump($this->root); //= /routeur2/
         if (stristr($path,'?')){
             $toHide = stristr($path, '?');
-            $path= str_replace($toHide, ' ', $path);
+            $path= str_replace($toHide, '', $path);
         }
 
         $path = explode('/', $path);
